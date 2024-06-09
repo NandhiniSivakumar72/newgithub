@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <script src="index.js" type="text/javascript"></script>
+    <form action="welcome.html">
+      <div id="logincontainer">
+        <h1 id="login">Login</h1>
+        <label for="mail">Enter Email</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="abc@gmail.com"
+          required
+        /><br /><br />
+        <label for="password">Enter Password</label>
+        <input
+          onkeyup="verifyPass()"
+          type="password"
+          name="password"
+          id="pass"
+          placeholder="Password"
+          required
+        />
+        <p>Password Strength: <span id="strength">No Strength</span></p>
+        <br /><br />
+        <input type="submit" name="Login" id="sub" />
+      </div>
+    </form>
+  </body>
+</html>
